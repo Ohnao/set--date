@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Test Mvcs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @test_mvcs.each do |test_mvc| %>
+      <tr>
+        <td><%= test_mvc.content %></td>
+        <td><%= test_mvc.text %></td>
+        <td><%= link_to 'Show', test_mvc %></td>
+        <td><%= link_to 'Edit', edit_test_mvc_path(test_mvc) %></td>
+        <td><%= link_to 'Destroy', test_mvc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test Mvc', new_test_mvc_path %>

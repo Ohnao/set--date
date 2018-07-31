@@ -1,0 +1,2 @@
+class TestMvc < ApplicationRecord
+end
