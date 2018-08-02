@@ -1,2 +1,0 @@
-class TestMvc < ApplicationRecord
-end
