@@ -39,7 +39,7 @@
    const app = new Vue({
      el: '#hello',
      data: {
-       message: "Can you say hello?"
+       message: "あああああああ"
      },
      components: { App }
    })
