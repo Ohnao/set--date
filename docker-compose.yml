@@ -2,7 +2,7 @@ version: '2'
 services:
 
   db:
-    image: set-data-mysql
+    image: mysql
     container_name: set-date-mysql
     volumes:
       - ./mysql_conf:/etc/mysql/conf.d/
